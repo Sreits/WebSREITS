@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(231, 216, 216);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #97a35f;
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e2eeab;
+}
+#navbar {
+  transition: 0.3s;
+}
+.navbar-scrolled {
+  background-color: #bfce79;
+  opacity: 0.9;
+}
+body {
+  background-color: white;
+}
+.jumbotron {
+  min-height: 100vh;
+  background-image: url("/assets/about/img/jumbotron-bg.png");
+  background-color: #bfce79;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.content {
+  min-height: 90vh;
+}
+.footer {
+  height: 250px;
+  background-image: url("/assets/about/img/jumbotron-bg.png");
+  background-color: #bfce79;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
