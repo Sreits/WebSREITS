@@ -8,6 +8,8 @@
   margin: 0;
   scroll-behavior: smooth;
 }
+
+/* trackbar */
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -28,12 +30,23 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #e2eeab;
 }
+/* end trackbar */
+
 #navbar {
   transition: 0.3s;
 }
 .navbar-scrolled {
   background-color: #bfce79;
   opacity: 0.9;
+}
+@media only screen and (max-width: 576px) {
+  #navbar {
+    background-color: #bfce79;
+    opacity: 0.9;
+  }
+  .carousel-item.testimonial {
+    height: 300px;
+  }
 }
 body {
   background-color: white;
@@ -70,6 +83,7 @@ body {
 }
 .carousel-item.member {
   height: 534px;
+  width: 100%;
   background-image: url("/assets/about/img/Group-170.png");
   background-color: #bfce79;
   color: #656e3d;
