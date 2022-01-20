@@ -45,7 +45,7 @@
     opacity: 0.9;
   }
   .carousel-item.testimonial {
-    height: 300px;
+    font-size: 12px;
   }
 }
 body {
