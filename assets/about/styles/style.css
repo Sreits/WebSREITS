@@ -50,10 +50,41 @@ body {
   min-height: 90vh;
 }
 .footer {
-  height: 250px;
-  background-image: url("/assets/about/img/jumbotron-bg.png");
+  height: 280px;
+  background-image: url("/assets/about/img/footer-background.png");
   background-color: #bfce79;
+  color: #656e3d;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+}
+.scrollTop {
+  transition: 0.3s;
+}
+.linkOut {
+  color: inherit;
+}
+.linkOut:hover {
+  cursor: nesw-resize;
+  color: #acb48b;
+}
+.carousel-item.member {
+  height: 534px;
+  background-image: url("/assets/about/img/Group-170.png");
+  background-color: #bfce79;
+  color: #656e3d;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.carousel-item.testimonial {
+  height: 255px;
+}
+.card.testimonial {
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff8be;
+}
+#testimonial {
+  color: #656e3d;
 }
