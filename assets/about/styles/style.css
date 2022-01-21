@@ -47,6 +47,9 @@
   .carousel-item.testimonial {
     font-size: 12px;
   }
+  .carousel-item.member {
+    font-size: 12px;
+  }
 }
 body {
   background-color: white;
@@ -82,7 +85,7 @@ body {
   color: #acb48b;
 }
 .carousel-item.member {
-  height: 534px;
+  height: 100%;
   width: 100%;
   background-image: url("/assets/about/img/Group-170.png");
   background-color: #bfce79;
@@ -91,8 +94,18 @@ body {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
+.carousel-inner.member {
+  height: 534px;
+}
+
 .carousel-item.testimonial {
   height: 255px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 16px; /* change width */
+  height: 16px; /* change height */
+  border-radius: 100%; /* add border-radius */
+  background-color: #97a35f;
 }
 .card.testimonial {
   height: 100%;
