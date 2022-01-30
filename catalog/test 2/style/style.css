@@ -19,6 +19,181 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+.triple-carousel-container{
+    width: 100%;
+    height: 880px;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-container {
+  align-items: center;
+  display: flex;
+  height: 400px;
+  margin: 0 auto;
+  max-width: 1000px;
+  position: relative;
+}
+
+.gallery-item {
+	top: 50px;
+	background-color:#80A326;
+  height: 550px;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  width: 150px;
+  z-index: 0;
+}
+
+.gallery-item-1 {
+	display: none;
+  left: 15%;
+  opacity: .4;
+  transform: translateX(-50%);
+}
+
+/* yang di kiri dan kanan */
+.gallery-item-2,
+.gallery-item-4 {
+	top : 100px;
+	background-color:#80A326;
+  height: 550px;
+  opacity: 1;
+  width: 350px;
+  z-index: 1;
+}
+
+.gallery-item-2 {
+	background-color:#80A326;
+  left: 10%;
+  transform: translateX(-50%);
+}
+
+/* yang ditengah */
+.gallery-item-3 {
+	background-color:#4F6B07;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+  height: 750px;
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 550px;
+  z-index: 2;
+}
+
+.gallery-item-4 {
+	background-color:#80A326;
+  left: 90%;
+  transform: translateX(-50%);
+}
+
+.gallery-item-5 {
+	display: none;
+  left: 85%;
+  opacity: .4;
+  transform: translateX(-50%);
+}
+
+.gallery-controls {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.gallery-controls button {
+  background-color:  whitesmokei	;
+  font-size: 0px;
+  text-transform: capitalize;
+}
+
+.gallery-controls button:focus {
+  outline: none;
+}
+
+
+.gallery-controls-previous {
+	border: none;
+  position: absolute;
+}
+
+.gallery-controls-previous::before {
+	color: #4F6B07;
+  border: solid #000;
+  border-width: 0 5px 5px 0;
+  content: '';
+  height: 45px;
+  left: -650px;
+  padding: 2px;
+  position: absolute;
+  top: 200px;
+  transform: rotate(135deg) ;
+  transition: left 0.15s ease-in-out;
+  width: 45px;
+}
+
+
+.gallery-controls-next {
+  position: absolute;
+  border: none;
+}
+.gallery-controls-next::before {
+	color: #4F6B07;
+  border: solid #000;
+  border-width: 0 5px 5px 0;
+  content: '';
+  height: 45px;
+  padding: 2px;
+  position: absolute;
+  right: -650px;
+  top: 200px;
+  transform: rotate(-45deg) ;
+  transition: right 0.15s ease-in-out;
+  width: 45px;
+}
+
+.gallery-controls-next:hover::before {
+	color: darkblue;
+
+}
+
+.gallery-controls-previous:hover::before {
+	color: darkblue;
+
+}
+
+
+
+.gallery-nav {
+  bottom: -15px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.gallery-nav li {
+  background: #ccc;
+  border-radius: 50%;
+  height: 10px;
+  margin: 0 16px;
+  width: 10px;
+}
+
+.gallery-nav li.gallery-item-selected {
+  background: #555;
+}
+
+/* -------------- */
 .carousel-header{
 	width: 100%;
 	height: 200px;
