@@ -128,7 +128,7 @@ time, mark, audio, video {
 
 
 
-.galery-title h1{
+.galerry-title h1{
 	font-size: 50px;
 	color: white;
 	font-family: Open Sans , sans-serif;
@@ -136,7 +136,7 @@ time, mark, audio, video {
 	line-height: 74px;
 
 }
-.galery-item-listbox{
+.galerry-item-listbox{
 	width: 85%;
 	height: 65%;
 	background:linear-gradient(180deg, #80A326 -76.86%, rgba(170, 216, 52, 0) 77.56%); ;
@@ -147,8 +147,8 @@ time, mark, audio, video {
 	
 }
 
-.gallery-item-2 .galery-item-listbox,
-.gallery-item-4 .galery-item-listbox{
+.gallery-item-2 .galerry-item-listbox,
+.gallery-item-4 .galerry-item-listbox{
 	background-color: #80A326;
 	filter: drop-shadow(0px -10px 39px rgba(0, 0, 0, 0.25));
 	border-radius: 25px;
@@ -157,7 +157,7 @@ time, mark, audio, video {
 
 }
 
-.galery-list li{
+.galerry-list li{
 	list-style-type: disc;
 	font-size: 30px;
 	margin-left: 50px;
@@ -168,7 +168,7 @@ time, mark, audio, video {
 }
 
 
-.galery-purchase-button{
+.galerry-purchase-button{
 	width: 75%;
 	height: 15%;
 	background-color: #ECFE99;
@@ -183,21 +183,21 @@ time, mark, audio, video {
 }
 
 
-.gallery-item-2 .galery-purchase-button,
-.gallery-item-4 .galery-purchase-button{
+.gallery-item-2 .galerry-purchase-button,
+.gallery-item-4 .galerry-purchase-button{
 	width: 55%;
 	height: 3%;
 	font-size: 0px;
 	box-shadow: 0px;
 
 }
-.galery-image{
+.galerry-image{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.galery-image img{ /* ukuran max */
+.galerry-image img{ /* ukuran max */
 	max-width: 350px;
 	max-height: 500px;
 	height: auto;
@@ -207,8 +207,8 @@ time, mark, audio, video {
 
 
 
-.gallery-item-2 .galery-image img,
-.gallery-item-4 .galery-image img{
+.gallery-item-2 .galerry-image img,
+.gallery-item-4 .galerry-image img{
 	margin-top: -150px;
 }
 
@@ -234,7 +234,7 @@ time, mark, audio, video {
   opacity: .4;
   transform: translateX(-50%);
 }
- /* galery item stop here */
+ /* galerry item stop here */
 .gallery-controls {
   display: flex;
   justify-content: center;
