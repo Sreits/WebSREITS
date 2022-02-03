@@ -88,7 +88,7 @@ time, mark, audio, video {
   display: flex;
   height: 100%;
   width: 100%;
-  margin: 0 auto;
+  margin:  auto;
   max-width: 1000px;
   position: relative;
 }
@@ -589,16 +589,8 @@ time, mark, audio, video {
 /* media quarry */
 /*desktop tapi layarnya kecil :v */
 @media only screen and (max-width: 1440px) and (min-width: 850px){
-
-.triple-carousel-container-header{
-	width: 100%;
-	height: 200px;
-	background-color: #EBEBEB;
-	display: flex;
-}
-
 .triple-carousel-container-header-left{
-	width: 50%;
+	width: 100%;
 	height: 200px;
 	display: flex;
 	flex-direction: column;
@@ -607,7 +599,7 @@ time, mark, audio, video {
 }
 
 .triple-carousel-container-header-right{
-	width: 50%;
+	width: 0%;
 	height: 200px;
 }
 
@@ -631,27 +623,10 @@ time, mark, audio, video {
     margin-left:25px;
 }
 
-.triple-carousel-container{
-    width: 100%;
-    height: 100%;
-    background: #EBEBEB;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-/* setengah lingkaran di background */
+
 
 .half-circle{
 	display: none;
-	width: 1000px;
-	height: 1000px;
-	border-radius: 1000px 1000px 0px 0px;
-	background-color: #C4C4C4;     
-}
-
-.gallery {
-  width: 100%;
-  height: 800px;
 }
 
 .gallery-container {
@@ -659,200 +634,18 @@ time, mark, audio, video {
   display: flex;
   height: 100%;
   width: 100%;
-  margin: 0 auto;
-  max-width: 1000px;
+  margin:  auto;
+  max-width: 500px;
   position: relative;
 }
 
-.gallery-item {
-	top: 50px;
-	background-color:#80A326;
-  height: 550px;
-  opacity: 0;
-  position: absolute;
-  transition: all 0.3s ease-in-out;
-  width: 150px;
-  z-index: 0;
-}
-
-.gallery-item-1 {
-	display: none;
-  left: 25%;
-  opacity: .4;
-  transform: translateX(-50%);
-}
-
-/* yang di kiri dan kanan */
 .gallery-item-2,
 .gallery-item-4 {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	align-content: center;
-	column-gap: 0px;
-	top : 100px;
-	background-color:#80A326;
-  height: 450 px;
-  opacity: 1; 
-  width: 350px;
-  z-index: 1;
-  border-radius: 40px;
-}
-
-.gallery-item-2{
-	margin-left: -7.5%;
-}
-
-.gallery-item-4{
-	margin-left: 7.5%;
-}
-
-
-.gallery-item-2 {
-  left: 10%;
-  transform: translateX(-50%);
-}
-
-/* yang ditengah */
-.gallery-item-3 {
-	flex-direction: column;
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	background-color:#4F6B07;
-	height: 650px;
-  opacity: 1;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 500px;
-  z-index: 2;
-  border-radius: 40px;
-}
-
-
-
-.gallery-title h1{
-	font-size: 50px;
-	color: white;
-	font-family: Open Sans , sans-serif;
-	font-weight: 700;
-	line-height: 74px;
-
-}
-
-.gallery-item-2 .gallery-title h1,
-.gallery-item-4 .gallery-title h1{
-	font-size: 40px;
-	margin-top: 20%;
-
-
-}
-.gallery-item-listbox{
-	width: 85%;
-	height: 65%;
-	background:linear-gradient(180deg, #80A326 -76.86%, rgba(170, 216, 52, 0) 77.56%); ;
-	border-radius: 40px;
-	display: flex;
-	align-items: center;
-}
-
-.gallery-item-2 .gallery-item-listbox,
-.gallery-item-4 .gallery-item-listbox{
-	margin-top: 3%;
-	background-color: #80A326;
-	filter: drop-shadow(0px -10px 39px rgba(0, 0, 0, 0.25));
-	border-radius: 25px;
-	display: flex;
-	align-items: center;
-	height: 40%;
-}
-
-.gallery-list li{
-	list-style-type: disc;
-	font-size: 30px;
-	margin-left: 50px;
-	line-height: 60px;
-	font-family: Open Sans , sans-serif;
-	font-weight: 400;
-	color:#EDFEA0 ;
-}
-
-.gallery-item-2 .gallery-list li,
-.gallery-item-4 .gallery-list li{
-	font-size: 25px;
-	line-height: 45px;
-
-	}
-
-
-.gallery-purchase-button{
-	width: 75%;
-	height: 15%;
-	background-color: #ECFE99;
-	border-radius: 50px;
-	margin-bottom: 15px;
-	box-shadow: -11px 11px 22px rgba(90, 97, 57, 0.2), 11px -11px 22px rgba(90, 97, 57, 0.2), -11px -11px 22px rgba(255, 255, 185, 0.9), 11px 11px 28px rgba(90, 97, 57, 0.9), inset 1px 1px 2px rgba(255, 255, 185, 0.3), inset -1px -1px 2px rgba(90, 97, 57, 0.5);
-	color: #000000;
-	font-size: 25px;
-	font-family: Open Sans, sans-serif;
-	letter-spacing: 5px;
-	font-weight: 500px;
-}
-
-
-.gallery-item-2 .gallery-purchase-button,
-.gallery-item-4 .gallery-purchase-button{
-	margin-top: 3px;
-	width: 55%;
-	height: 3%;
-	font-size: 0px;
-	box-shadow: 0px;
-
-}
-.gallery-image{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.gallery-image img{ /* ukuran max */
-	max-width: 350px;
-	max-height: 500px;
-	height: auto;
-	width: auto;
-	margin-top: -300px;
-}
-
-
-
-.gallery-item-2 .gallery-image img,
-.gallery-item-4 .gallery-image img{
-	margin-top: -225px;
-}
-
-
-
-.gallery-item-4 {
-	background-color:#80A326;
-  left: 90%;
-  transform: translateX(-50%);
-}
-
-.gallery-item-2 img,
-.gallery-item-4 img {
-	max-height: 350px;
-	max-width: 200px;
-	width: auto;
-	height: auto;
-}
-
-.gallery-item-5 {
 	display: none;
-  left: 85%;
-  opacity: .4;
-  transform: translateX(-50%);
 }
- /* galerry item stop here */
+
+
+
 .gallery-controls {
   display: flex;
   justify-content: center;
@@ -881,7 +674,7 @@ time, mark, audio, video {
   border-width: 0 5px 5px 0;
   content: '';
   height: 45px;
-  left: -500px;
+  left: -300px;
   padding: 2px;
   position: absolute;
   top: 350px;
@@ -903,7 +696,7 @@ time, mark, audio, video {
   height: 45px;
   padding: 2px;
   position: absolute;
-  right: -700px;
+  right: -300px;
   top: 350px;
   transform: rotate(-45deg) ;
   transition: right 0.15s ease-in-out;
@@ -920,29 +713,6 @@ time, mark, audio, video {
 
 }
 
-
-
-.gallery-nav {
-  bottom: -15px;
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  position: absolute;
-  width: 100%;
-}
-
-.gallery-nav li {
-  background: #ccc;
-  border-radius: 50%;
-  height: 10px;
-  margin: 0 16px;
-  width: 10px;
-}
-
-.gallery-nav li.gallery-item-selected {
-  background: #555;
-}
 
 
 
@@ -1072,6 +842,130 @@ time, mark, audio, video {
 /* tablet */
 @media only screen and (max-width: 850px) and (min-width: 500px){
 
+.triple-carousel-container-header-left{
+	width: 100%;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+}
+
+.triple-carousel-container-header-right{
+	width: 0%;
+	height: 200px;
+}
+
+
+.triple-carousel-container-header-left h1{
+	margin-top: 25px;
+   	color: #4F6B07;
+    font-family: Open Sans,sans-serif;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 55px;
+    margin-left: 25px;
+}
+
+.triple-carousel-container-header-left h3{
+	color: #4F6B07;
+    font-family: Open Sans,sans-serif ;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+    margin-left:25px;
+}
+
+
+
+.half-circle{
+	display: none;
+}
+
+.gallery-container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin:  auto;
+  max-width: 500px;
+  position: relative;
+}
+
+.gallery-item-2,
+.gallery-item-4 {
+	display: none;
+}
+
+
+
+.gallery-controls {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.gallery-controls button {
+  background-color:  whitesmokei	;
+  font-size: 0px;
+  text-transform: capitalize;
+}
+
+.gallery-controls button:focus {
+  outline: none;
+}
+
+
+.gallery-controls-previous {
+	border: none;
+  position: absolute;
+}
+
+.gallery-controls-previous::before {
+	color: #4F6B07;
+  border: solid #000;
+  border-width: 0 5px 5px 0;
+  content: '';
+  height: 45px;
+  left: -300px;
+  padding: 2px;
+  position: absolute;
+  top: 350px;
+  transform: rotate(135deg) ;
+  transition: left 0.15s ease-in-out;
+  width: 45px;
+}
+
+
+.gallery-controls-next {
+  position: absolute;
+  border: none;
+}
+.gallery-controls-next::before {
+	color: #4F6B07;
+  border: solid #000;
+  border-width: 0 5px 5px 0;
+  content: '';
+  height: 45px;
+  padding: 2px;
+  position: absolute;
+  right: -300px;
+  top: 350px;
+  transform: rotate(-45deg) ;
+  transition: right 0.15s ease-in-out;
+  width: 45px;
+}
+
+.gallery-controls-next:hover::before {
+	color: darkblue;
+
+}
+
+.gallery-controls-previous:hover::before {
+	color: darkblue;
+
+}
+
 
 
 .carousel-header{
@@ -1193,6 +1087,133 @@ time, mark, audio, video {
 
 /* tablet khusus arrow carrousel mini aja */
 @media only screen and (max-width: 850px) and (min-width: 500px){
+
+
+.triple-carousel-container-header-left{
+	width: 100%;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+}
+
+.triple-carousel-container-header-right{
+	width: 0%;
+	height: 200px;
+}
+
+
+.triple-carousel-container-header-left h1{
+	margin-top: 25px;
+   	color: #4F6B07;
+    font-family: Open Sans,sans-serif;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 55px;
+    margin-left: 25px;
+}
+
+.triple-carousel-container-header-left h3{
+	color: #4F6B07;
+    font-family: Open Sans,sans-serif ;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+    margin-left:25px;
+}
+
+
+
+.half-circle{
+	display: none;
+}
+
+.gallery-container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin:  auto;
+  max-width: 500px;
+  position: relative;
+}
+
+.gallery-item-2,
+.gallery-item-4 {
+	display: none;
+}
+
+
+
+.gallery-controls {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.gallery-controls button {
+  background-color:  whitesmokei	;
+  font-size: 0px;
+  text-transform: capitalize;
+}
+
+.gallery-controls button:focus {
+  outline: none;
+}
+
+
+.gallery-controls-previous {
+	border: none;
+  position: absolute;
+}
+
+.gallery-controls-previous::before {
+	color: #4F6B07;
+  border: solid #000;
+  border-width: 0 5px 5px 0;
+  content: '';
+  height: 45px;
+  left: -300px;
+  padding: 2px;
+  position: absolute;
+  top: 350px;
+  transform: rotate(135deg) ;
+  transition: left 0.15s ease-in-out;
+  width: 45px;
+}
+
+
+.gallery-controls-next {
+  position: absolute;
+  border: none;
+}
+.gallery-controls-next::before {
+	color: #4F6B07;
+  border: solid #000;
+  border-width: 0 5px 5px 0;
+  content: '';
+  height: 45px;
+  padding: 2px;
+  position: absolute;
+  right: -300px;
+  top: 350px;
+  transform: rotate(-45deg) ;
+  transition: right 0.15s ease-in-out;
+  width: 45px;
+}
+
+.gallery-controls-next:hover::before {
+	color: darkblue;
+
+}
+
+.gallery-controls-previous:hover::before {
+	color: darkblue;
+
+}
+
+
 .bi-arrow-left-circle{
 	margin-left: 40px;
 }
