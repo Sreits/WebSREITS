@@ -4,9 +4,9 @@ var carousel = new bootstrap.Carousel(myCarousel, {
   wrap: true
 })
 
-var myCarousel1 = document.querySelector('#scarouselExampleControlss')
+var myCarousel1 = document.querySelector('#carouselExampleSlidesOnly')
 var carousel1 = new bootstrap.Carousel(myCarousel1, {
-  interval: 100,
+  interval: 2000,
   wrap: true
 })
 
@@ -136,3 +136,8 @@ const exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryCont
 exampleCarousel.setControls();
 // exampleCarousel.setNav();
 exampleCarousel.useControls();
+
+
+//buat contekan bootstrap
+
+
