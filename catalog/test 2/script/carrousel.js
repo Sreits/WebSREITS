@@ -6,7 +6,7 @@ var carousel = new bootstrap.Carousel(myCarousel, {
 
 var myCarousel1 = document.querySelector('#carouselExampleSlidesOnly')
 var carousel1 = new bootstrap.Carousel(myCarousel1, {
-  interval: false,
+  interval: 5000,
   wrap: true
 })
 

@@ -19,7 +19,9 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-
+.carousel-inner, .carouselExampleControls,.carouselExampleSlidesOnly,.carousel.slide{
+	max-width: 1920px;
+}
 .big-carousel-container{
 	width: 100%;
 	min-height: 1080px;
@@ -28,11 +30,16 @@ time, mark, audio, video {
 	background-size: cover;
 	display: flex;
 	align-items: center;
+	flex-direction: column;
+	max-width: 1920px;
 }
 
 .big-carousel-content{
+	margin-top: 300px;
+	margin-right: 50px;
 	width: 100%;
 	height: 350px;
+	max-width: 1920px;
 
 }
 .big-carousel-content h1{
@@ -122,19 +129,105 @@ time, mark, audio, video {
 }
 
 .coupon{
-width: 613px;
-height: 833px;
+padding-left: 0px;
+width: 650px;
+height: 100%;
+border-radius: 300px  0px 0px 0px;
 bottom: 0px;
-
-
 background: rgba(255, 254, 254, 0.25);
 border: 1px solid #FFFFFF;
 box-sizing: border-box;
 backdrop-filter: blur(11px);
+display: flex;
+align-items: center;
+flex-direction: column;
 /* Note: backdrop-filter has minimal browser support */
 }
 
+.coupon h3{
+	font-size: 50px;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	color: whitesmoke;
+	margin-right: 350px;
+	margin-top: 50px;
+}
 
+.coupon h2{
+	margin-top: -50px;
+	font-size: 350px;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	color: whitesmoke;
+}
+
+.coupon h4{
+	font-size: 50px;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	color: whitesmoke;
+	margin-left: 420px;
+	margin-top: -90px;
+}
+
+.coupon p{
+font-family: sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 35px;
+line-height: 53px;
+margin: auto;
+margin-left: 25px;
+margin-right: 20px;
+
+display: flex;
+align-items: center;
+text-align: justify;
+
+color: #FFFFFF;
+}
+.black-area{
+	margin-top: 150px;
+	margin-left: 80px;
+	width: 80%;
+	height: 75px;
+	border-radius: 50px;
+	background-color: black;
+	opacity: 0.8;
+	display: flex;
+	flex-direction:row;
+	align-items: center;
+	border-color: yellow;
+	border-width: 10px;
+}
+
+.black-area h1{
+	position: absolute;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 53px;
+	/* or 212% */
+	margin-left: 40px;
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #FFFFFF;
+
+}
+
+.small-line{
+	height: 2px;
+	width: 250px;
+	background-color: white;
+	margin-left: 250px;
+}
 
 .big-circle{
 	width: 210px;
@@ -147,6 +240,7 @@ backdrop-filter: blur(11px);
 	height: 200px;
 	background-color: #EBEBEB;
 	display: flex;
+	max-width: 1920px;
 }
 
 .triple-carousel-container-header-left{
@@ -190,6 +284,7 @@ backdrop-filter: blur(11px);
     display: flex;
     align-items: center;
     flex-direction: column;
+    max-width: 1920px;
 }
 /* setengah lingkaran di background */
 
@@ -504,6 +599,7 @@ backdrop-filter: blur(11px);
 	height: 200px;
 	background-color: black;
 	display: flex;
+	max-width: 1920px;
 }
 
 .carousel-header-left{
@@ -562,6 +658,7 @@ backdrop-filter: blur(11px);
 	height: 880px;
 	display: flex;
 	align-items: center;
+	max-width: 1920px;
 }
 
 .carousel-object{
