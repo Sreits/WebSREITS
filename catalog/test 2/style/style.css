@@ -19,23 +19,57 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-.carousel-inner, .carouselExampleControls,.carouselExampleSlidesOnly,.carousel.slide{
-	max-width: 1920px;
+
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-.big-carousel-container{
-	width: 100%;
-	min-height: 1080px;
+
+
+
+.carousel-inner, .carouselExampleControls,.carouselExampleSlidesOnly,.carousel.slide{
+	max-width: 2560px;
+	max-height: 1440px;
+	width: 100vw;
+	height: 100vh;
+}
+.section-2{
+	max-width: 2560px;
+	max-height: 1440px;
+	width: 100vw;
+	height: 100vh;
 	background-image: url('https://i.imgur.com/epM4YY1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
 	align-items: center;
-	flex-direction: column;
-	max-width: 1920px;
+	flex-direction: row;
+}
+
+.section-3{
+	max-width: 2560px;
+	max-height: 1440px;
+	width: 100vw;
+	height: 100vh;
+  background: #EBEBEB;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-4{
+	max-width: 2560px;
+	max-height: 1440px;
+	width: 100vw;
+	height: 100vh;
+	background-color: #D1E18B;
+	display: flex;
+	align-items: center;
 }
 
 .big-carousel-content{
-	margin-top: 300px;
+	margin-top: 60px;
 	margin-right: 50px;
 	width: 100%;
 	height: 350px;
@@ -73,7 +107,7 @@ time, mark, audio, video {
 
 .second-slide-left{
 	width: 50%;
-	height: 1080px;
+	height: 1440px;
 	display: flex;
 	flex-direction: column;
 	gap: 0px;
@@ -122,7 +156,7 @@ time, mark, audio, video {
 }
 .second-slide-right{
 	width: 50%;
-	height: 1080px;
+	height: 1440px;
 	display: flex;
 	align-items: flex-end;
 	flex-direction: row-reverse;
@@ -130,10 +164,10 @@ time, mark, audio, video {
 
 .coupon{
 padding-left: 0px;
-width: 650px;
-height: 100%;
+width: 60%;
+height: 96%;
 border-radius: 300px  0px 0px 0px;
-bottom: 0px;
+bottom: 100px;
 background: rgba(255, 254, 254, 0.25);
 border: 1px solid #FFFFFF;
 box-sizing: border-box;
@@ -145,7 +179,7 @@ flex-direction: column;
 }
 
 .coupon h3{
-	font-size: 50px;
+	font-size: 100px;
 	font-family: sans-serif;
 	font-style: normal;
 	font-weight: bold;
@@ -156,7 +190,7 @@ flex-direction: column;
 
 .coupon h2{
 	margin-top: -50px;
-	font-size: 350px;
+	font-size: 375px;
 	font-family: sans-serif;
 	font-style: normal;
 	font-weight: bold;
@@ -164,24 +198,25 @@ flex-direction: column;
 }
 
 .coupon h4{
-	font-size: 50px;
+	font-size: 150px;
 	font-family: sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	color: whitesmoke;
-	margin-left: 420px;
-	margin-top: -90px;
+	margin-left: 450px;
+	margin-top: -230px;
 }
 
 .coupon p{
 font-family: sans-serif;
 font-style: normal;
 font-weight: normal;
-font-size: 35px;
-line-height: 53px;
+font-size: 50px;
+line-height: 75px;
 margin: auto;
-margin-left: 25px;
-margin-right: 20px;
+margin-top: 100px;
+margin-left: 50px;
+margin-right: 50px;
 
 display: flex;
 align-items: center;
@@ -240,7 +275,7 @@ color: #FFFFFF;
 	height: 200px;
 	background-color: #EBEBEB;
 	display: flex;
-	max-width: 1920px;
+	max-width: 2560px;
 }
 
 .triple-carousel-container-header-left{
@@ -277,14 +312,7 @@ color: #FFFFFF;
     margin-left:25px;
 }
 
-.triple-carousel-container{
-    width: 100%;
-    height: 880px;
-    background: #EBEBEB;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    max-width: 1920px;
+
 }
 /* setengah lingkaran di background */
 
@@ -596,15 +624,15 @@ color: #FFFFFF;
 /* -------------- */
 .carousel-header{
 	width: 100%;
-	height: 200px;
+	height: 150px;
 	background-color: black;
 	display: flex;
-	max-width: 1920px;
+	max-width: 2560px;
 }
 
 .carousel-header-left{
 	width: 50%;
-	height: 200px;
+	height: 150px;
 	background-color: #D1E18B;
 	display: flex;
 	flex-direction: column;
@@ -632,7 +660,7 @@ color: #FFFFFF;
 
 .carousel-header-right{
 	width: 50%;
-	height: 200px;
+	height: 150px;
 	background-color: #D1E18B;
 	display: flex;
 	align-items: center;
@@ -652,14 +680,7 @@ color: #FFFFFF;
 }
 
 
-.carousel-container{
-	background-color: #D1E18B;
-	width: 100%;
-	height: 880px;
-	display: flex;
-	align-items: center;
-	max-width: 1920px;
-}
+
 
 .carousel-object{
 	display: flex;
@@ -667,7 +688,7 @@ color: #FFFFFF;
 	align-items: center;
 	background-color: white;
 	height: 87%;
-	width: 40%;
+	width: 60vw;
 	border-radius: 50px;
 	margin: auto;
 	max-width: 655px;
@@ -801,14 +822,76 @@ color: #FFFFFF;
   to {opacity: 1}
 }
 
-
-
-
-
-
 /* media quarry */
 /*desktop tapi layarnya kecil :v */
 @media only screen and (max-width: 1440px) and (min-width: 850px){
+
+.second-slide{
+	flex-direction: column;
+	max-width: 100vw;
+
+}
+.second-slide-left{
+	width: 100%;
+	max-width: 100vw;
+}
+.second-slide-right{
+	flex-direction: column;
+	width: 100%;
+	max-width: 100vw;
+}
+.coupon{
+	flex-direction: column;
+	margin-bottom: 50px;
+	margin-top: 300px;
+	height: 100%;
+	width: 80%;
+}
+
+.discount{
+	margin-left: -800px;
+	align-items: flex-start;
+}
+.coupon h3{
+	font-size: 100px;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	color: whitesmoke;
+	margin-right: 350px;
+	margin-top: 50px;
+}
+
+.coupon h2{
+	margin-top: -50px;
+	font-size: 500px;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	color: whitesmoke;
+}
+
+.coupon h4{
+	font-size: 150px;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	color: whitesmoke;
+	margin-left: 550px;
+	margin-top: -250px;
+}
+
+
+
+.discount{
+	margin-top: -1000px;
+}
+
+.second-slide-left-bottom img{
+	display: none;
+}
+
+
 .triple-carousel-container-header-left{
 	width: 100%;
 	height: 200px;
@@ -953,7 +1036,7 @@ color: #FFFFFF;
 	background-color: #D1E18B;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	left: 5px;
 }
 
@@ -992,21 +1075,14 @@ color: #FFFFFF;
 
 }
 
-.carousel-container{
-	background-color: #D1E18B;
-	width: 100%;
-	height: 880px;
-	display: flex;
-	align-items: flex-start;
-}
 
 .carousel-object{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	background-color: white;
-	height: 87%;
-	width: 50%;
+	height: 65%;
+	width: 50vw;
 	border-radius: 50px;
 	margin: auto;
 }
@@ -1014,7 +1090,7 @@ color: #FFFFFF;
 .bi-arrow-left-circle,.bi-arrow-right-circle{
 	font-size: 75px;
 	color: #4F6B07;
-	margin-bottom: 550px;
+	margin-bottom: 130px;
 }
 
 .bi-arrow-left-circle{
@@ -1062,6 +1138,7 @@ color: #FFFFFF;
 /* tablet */
 @media only screen and (max-width: 850px) and (min-width: 500px){
 
+
 .triple-carousel-container-header-left{
 	width: 100%;
 	height: 200px;
@@ -1201,7 +1278,7 @@ color: #FFFFFF;
 	background-color: #D1E18B;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .carousel-header-left h1{
@@ -1239,13 +1316,7 @@ color: #FFFFFF;
 
 }
 
-.carousel-container{
-	background-color: #D1E18B;
-	width: 100%;
-	height: 880px;
-	display: flex;
-	align-items: flex-start;
-}
+
 
 .carousel-object{
 	display: flex;
@@ -1253,7 +1324,7 @@ color: #FFFFFF;
 	align-items: center;
 	background-color: white;
 	height: 87%;
-	width: 60%;
+	width: 50vw;
 	border-radius: 50px;
 	margin: auto;
 }
@@ -1468,7 +1539,7 @@ color: #FFFFFF;
 	background-color: #D1E18B;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .carousel-header-left h1{
@@ -1506,13 +1577,6 @@ color: #FFFFFF;
 
 }
 
-.carousel-container{
-	background-color: #D1E18B;
-	width: 100%;
-	height: 880px;
-	display: flex;
-	align-items: flex-start;
-}
 
 .carousel-object{
 	display: flex;
@@ -1520,7 +1584,7 @@ color: #FFFFFF;
 	align-items: center;
 	background-color: white;
 	height: 87%;
-	width: 80%;
+	width: 60vw;
 	border-radius: 50px;
 	margin: auto;
 }
