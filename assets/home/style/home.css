@@ -86,6 +86,24 @@ section {
   display: none;
 }
 
+.footer {
+  height: 280px;
+  background-image: url("/assets/about/img/footer-background.png");
+  background-color: #bfce79;
+  color: #656e3d;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.linkOut {
+  color: inherit;
+}
+.linkOut:hover {
+  cursor: nesw-resize;
+  color: #acb48b;
+}
+
 @media (min-width: 992px) {
   .container {
     display: grid;
