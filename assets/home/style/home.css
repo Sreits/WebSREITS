@@ -49,6 +49,10 @@ a {
     'vision' 
     'mission';
 }
+
+/*.blend-soft-light {
+  mix-blend-mode: soft-light;
+}*/
 .sponsor {
   grid-area: sponsor;
 }
@@ -85,6 +89,19 @@ section {
 #insight .more {
   display: none;
 }
+.bg-gradient-green-orange {
+  background-color: linear-gradient(-90deg, #ECCB75 3.21%, #BFCE79 47.11%, #92CD63 74.57%);
+}
+.youtube-article {
+  width: 300px;
+}
+#re-cast {
+  background: url("/assets/home/img/re-cast-bg.png"), linear-gradient(-90deg, #ECCB75 3.21%, #BFCE79 47.11%, #92CD63 74.57%);
+  background-blend-mode: soft-light;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
 .footer {
   height: 280px;
@@ -102,6 +119,20 @@ section {
 .linkOut:hover {
   cursor: nesw-resize;
   color: #acb48b;
+}
+
+.embla {
+  overflow: hidden;
+  max-width: 100%;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  position: relative;
+  flex: 0 0;
+  max-width: 100%;
+  margin-right: 20px;
 }
 
 @media (min-width: 992px) {
