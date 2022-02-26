@@ -56,7 +56,7 @@ body {
 }
 .jumbotron {
   min-height: 100vh;
-  background-image: url("/assets/about/img/jumbotron-bg.png");
+  background-image: url("/assets/about/img/jumbotron-bg.jpg");
   background-color: #bfce79;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
