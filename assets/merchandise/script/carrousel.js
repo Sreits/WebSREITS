@@ -18,7 +18,7 @@ window.addEventListener("scroll", function () {
 
 var myCarousel = document.querySelector('#carouselExampleControls')
 var carousel = new bootstrap.Carousel(myCarousel, {
-  interval: 4000,
+  interval: false,
   wrap: true
 })
 
