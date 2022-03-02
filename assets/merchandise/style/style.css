@@ -54,18 +54,7 @@ time, mark, audio, video {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
-@media only screen and (max-width: 576px) {
-  #navbar {
-    background-color: #bfce79;
-    opacity: 1;
-  }
-  .carousel-item.testimonial {
-    font-size: 12px;
-  }
-  .carousel-item.member {
-    font-size: 12px;
-  }
-}
+
 
 body{
 	display: flex;
@@ -128,6 +117,8 @@ body{
 	display: flex;
 	align-items: center;
 }
+
+
 .section-1-left{ 
 	background: linear-gradient(121.79deg, #CEE75B 2.62%, #BFCE79 26.56%, #DDEC96 75.95%);;
 	min-height: 930px;

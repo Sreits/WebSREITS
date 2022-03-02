@@ -1,0 +1,28 @@
+sub section 1
+
+.section-1-right{
+	min-height: none;
+	background-color: #EBEBEB;;
+	height: 50vh;
+	width: 100vw;
+  	max-width: none;
+  	max-height: 1080px;
+  	display: flex;
+  	align-items: center;
+  	flex-direction: column;
+
+	}
+	
+	.section-1-left{ 
+	background: linear-gradient(121.79deg, #CEE75B 2.62%, #BFCE79 26.56%, #DDEC96 75.95%);;
+	min-height: none;
+  	height: 50vh;
+  	width: 100vw;
+  	max-width: none;
+  	max-height: 1080px;
+  	display: flex;
+  	align-items: center;
+  	flex-direction: column;
+
+	}
+
