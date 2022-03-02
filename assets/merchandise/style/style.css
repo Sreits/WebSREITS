@@ -30,7 +30,7 @@ time, mark, audio, video {
 
 @font-face {
     font-family: Gobold;
-    src: url("font/Gobold bold.otf") format("opentype");
+    src: url("font/Goboldbold.otf") format("opentype");
 }
 
 .navbar-scrolled {
