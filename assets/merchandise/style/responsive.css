@@ -43,7 +43,7 @@
 	max-width: 576px;
 	max-height: none;
 	width: 100vw;
-	height: 100vh;
+	height:auto;
 	background-color: #D1E18B;
 	display: flex;
 	align-items: center;
@@ -117,6 +117,47 @@
 	.gallery-controls-next{
 		display: none;
 	}
+
+	.main-text	{
+	margin-top: 	0px;
+}
+.main-text h1,.main-text h2,.main-text h3,.main-text h4{
+	text-align: 	left	;
+	font-size: 	30px;
+	font-family: "Open Sans", sans-serif;
+	margin-left: 20px;
+	margin-right: 	150px;
+	line-height: 	40px;
+}
+
+.main-text	h2{
+	font-weight: 	700;
+}
+
+.main-text h3{
+	font-size: 	30px;
+	font-weight: 	500;
+}
+
+.main-text	h4{
+	margin-top: 	100px;
+	font-size: 	25px;
+}
+
+.more-info button{
+	width: 100%;
+	height: 35%;
+	background-color: #4F6B07;
+	border-radius: 50px;
+	margin-bottom: 15px;
+	box-shadow: -8px 8px 16px rgba(32, 43, 3, 0.2), 8px -8px 16px rgba(32, 43, 3, 0.2), -8px -8px 16px rgba(126, 171, 11, 0.9), 8px 8px 20px rgba(32, 43, 3, 0.9), inset 1px 1px 2px rgba(126, 171, 11, 0.3), inset -1px -1px 2px rgba(32, 43, 3, 0.5);	color: #000000;
+	font-size: 25px;
+	color: 	white;
+	font-family:"Open Sans", sans-serif;
+	font-weight: 500px;
+	margin-top: 	50px;
+	margin-left: 100px;
+}
 
 }
 
