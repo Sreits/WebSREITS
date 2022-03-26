@@ -1,3 +1,6 @@
+import renderHeaderImg from "./header-img.js";
+import renderSreInsight from "./Sre-insight.js";
+
 document.addEventListener("scroll", ()=>{
     let nav = document.querySelector('.navbar');
     if(window.scrollY > nav.style.height) {
@@ -7,9 +10,5 @@ document.addEventListener("scroll", ()=>{
     }
 })
 
-// $(function () {
-//     $(document).scroll(function () {
-//       let $nav = $('.navbar')
-//       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height())
-//     })
-//   })
+renderHeaderImg();
+renderSreInsight();

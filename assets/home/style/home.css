@@ -137,7 +137,7 @@ section {
 
 .embla {
   overflow: hidden;
-  max-width: 100%;
+  max-width: 90vw;
 }
 .embla__container {
   display: flex;
@@ -148,11 +148,19 @@ section {
   max-width: 100%;
   margin-right: 20px;
 }
+#sre-insight-carousel {
+  width: 24ch;
+}
 #sre-insight-container > div {
   width: 24ch;
 }
 #sre-insight-container > div > img {
+  height:24ch;
   width: 24ch;
+}
+
+.rounded-corners {
+  border-radius: 10px;
 }
 @media (min-width: 992px) {
   .container {
@@ -182,9 +190,10 @@ section {
   #header-carousel-inner > .carousel-item {
     max-height: 100%;
   }
-  #header-carousel-inner > .carousel-item > img{
-    object-fit: cover;
-    object-position: center bottom;
+  #header-carousel-img{
+    object-fit: none;
+    object-position: center;
+    vertical-align: bottom;
   }
 
   .sponsor {

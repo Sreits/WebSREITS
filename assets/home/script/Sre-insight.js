@@ -1,48 +1,47 @@
 const sreInsightArticles = [
   {
-    src: "/img/home.png",
+    src: "assets/home/img/SRE-Insight/SRE-Insight_1.png",
     caption:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptatem1",
   },
   {
-    src: "/img/home.png",
+    src: "assets/home/img/SRE-Insight/SRE-Insight_2.png",
     caption:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptatem1",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptatem2",
   },
   {
-    src: "/img/home.png",
+    src: "assets/home/img/SRE-Insight/SRE-Insight_3.png",
     caption:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptatem1",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptatem3",
   },
 ];
 
-const renderSreInsight = () => {
-  const container = document
-    .createElement("div")
-    .classList.add("carousel-inner");
+const renderSreInsightInner = () => {
+  const container = document.createElement("div");  
+  container.className = "carousel-inner shadow rounded-corners";
+  container.setAttribute("id", "sre-insight-container");
+
+  let isFirst = true;
   sreInsightArticles.forEach((element) => {
     const article = document.createElement("div");
-    article.classList.add("carousel-item", "active", "d-lg-block");
-    article.append(document.createElement("article").setAttribute("class", "card").setAttribute("style", "width=24ch;"));
-    article.innerHTML = `
-    <article class="card" style="width: 24ch;">
-        <img class="card-img-top" src="/img/home.png" alt="" />
-        <div class="card-body">
-            <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptatem1
-            </p>
-        </div>
-    </article>`;
-    const body = document.createElement("div");
-    const caption = document.createElement()
-    //container.append(article);
+    article.className = "carousel-item";
+    if(isFirst){
+      article.classList.add("active");
+      isFirst = false;
+    }
+    article.innerHTML = `<img
+    src="${element.src}"
+    class=""
+    alt="..."
+    />`
+    container.appendChild(article);
   });
   return container;
 };
 
-function render() {
-  const parent = document.getElementById("sre-insight-container");
-  parent.innerHTML = renderSreInsight();
+const renderSreInsight = () => {
+  const parent = document.getElementById("sre-insight-carousel");
+  parent.prepend(renderSreInsightInner());
 }
 
-render();
+export { renderSreInsight as default };
