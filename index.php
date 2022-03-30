@@ -44,7 +44,7 @@
 		<!--  -->
 		<div class="flex-col-c-m p-l-15 p-r-15 p-t-50 p-b-120">
 			<h3 class="l1-txt1 txt-center p-b-40 respon1">
-				Something big is coming!
+				Something big is coming! Test
 			</h3>
 
 		</div>
