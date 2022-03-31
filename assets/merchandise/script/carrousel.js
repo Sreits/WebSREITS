@@ -7,13 +7,17 @@ $('.owl-carousel').owlCarousel({
     margin:-90,
     nav:true,
     dots:false,
+    autoplay:true,
+    autoplayTimeout:4000,
+    autoplayHoverPause:true,
     navText: [
       prevIcon,
       nextIcon
     ],
     responsive:{
         0:{
-            items:1
+            items:1,
+            margin:50
         },
         600:{
             items:1
