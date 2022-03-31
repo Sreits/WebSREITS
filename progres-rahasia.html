@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="assets/home/style/home.css" />
   </head>
   <body>
+    <script src="assets/home/script/home.js" type="module"></script>
     <!-- navbar -->
     <header id="navbar" class="navbar fixed-top navbar-expand-sm navbar-light">
       <div class="container">
@@ -49,12 +50,11 @@
             <a
               class="nav-link me-sm-5 text-decoration-underline"
               aria-current="page"
-              href="#"
+              href="index.html"
               >Home</a
             >
-            <a class="nav-link me-sm-5" aria-current="page" href="home.html">Home</a>
-            <a class="nav-link me-sm-5 text-decoration-underline" href="about.html">About</a>
-            <a class="nav-link me-sm-5" href="#">Event</a>
+            <a class="nav-link me-sm-5" href="about.html">About</a>
+            <a class="nav-link me-sm-5" href="events.html">Event</a>
             <a class="nav-link" href="catalog.html">Merchandise</a>
           </div>
         </div>
@@ -67,7 +67,6 @@
       </div>
     </header>
     <!-- navbar end -->
-
     <!-- Jumbotron start -->
     <section
       class="d-flex flex-column flex-lg-row-reverse align-items-center min-vh-100"
@@ -79,7 +78,7 @@
         class="carousel slide"
         data-bs-ride="carousel"
       >
-        <div class="carousel-indicators">
+        <div class="carousel-indicators" id="header-carousel-indicators">
           <button
             type="button"
             data-bs-target="#header-img-carousel"
@@ -101,30 +100,7 @@
             aria-label="Slide 3"
           ></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item bg-gradient-green-orange active">
-            <img
-              src="assets/home/img/home.png"
-              class="d-block h-100 w-100 blend-soft-light"
-              alt="..."
-              style="object-fit: cover;"
-            />
-          </div>
-          <div class="carousel-item bg-gradient-green-orange">
-            <img
-              src="assets/home/img/home.png"
-              class="d-block h-100 w-100 blend-soft-light"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item bg-gradient-green-orange">
-            <img
-              src="assets/home/img/home.png"
-              class="d-block h-100 w-100 blend-soft-light"
-              alt="..."
-            />
-          </div>
-        </div>
+        <!-- carousel inner made with header-img.js -->
         <button
           class="carousel-control-prev"
           type="button"
@@ -151,14 +127,19 @@
           Society of Renewable Energy
           <u>Institut Teknologi Sepuluh Nopember</u>
         </h1>
-        <p>
-          Empowering <b>#RenewableEnergy</b> for Indonesia
-          brighter future
-        </p>
-        <a href="about.html">More info</a>
-        <button type="button" class="btn btn-outline-dark more-button p-1">
-          <img src="assets/home/img/arrow.svg" alt="" style="width: 100%;" />
-        </button>
+        <p>Empowering <b>#RenewableEnergy</b> for Indonesia brighter future</p>
+        <div>
+          More info
+          <a href="index.html">
+            <button type="button" class="btn btn-outline-dark more-button p-1">
+              <img
+                src="assets/home/img/arrow.svg"
+                alt=""
+                style="width: 100%;"
+              />
+            </button>
+          </a>
+        </div>
       </div>
     </section>
     <!-- Jumbotron end -->
@@ -170,9 +151,9 @@
     >
       <!-- Sponsor -->
       <section class="sponsor d-flex flex-column justify-content-center">
-        <h2 class="card-title">Our Sponsor</h2>
-        <div class="card shadow border-0">
-          <div class="card-body ">
+        <h2 class="card-title pt-5 pb-2">Our Sponsor</h2>
+        <div class="card border-0">
+          <div class="card-body">
             <div class="d-flex justify-content-around">
               <img
                 class="w-25 h-max-160px"
@@ -190,36 +171,41 @@
       </section>
       <!-- Vision -->
       <section class="vision d-flex flex-column justify-content-center">
-        <h2 class="card-title">Our Vision</h2>
+        <h2 class="card-title pt-5 pb-2">Our Vision</h2>
         <div class="card shadow border-0">
-          <div class="card-body">
-            <p class="card-text">
-              Enhance student’s interest and insight into Renewable Energy to be
-              able to apply it.
+          <div
+            class="card-body ps-5 pe-5 our-text-container d-flex flex-column justify-content-center"
+          >
+            <p class="card-text text-center">
+              Enhance student’s <b>interest and insight</b> into
+              <b>Renewable Energy</b> to be able to apply it.
             </p>
           </div>
         </div>
       </section>
       <!-- Mission -->
       <section class="mission d-flex flex-column justify-content-center">
-        <h2 class="card-title">Our Mission</h2>
+        <h2 class="card-title pt-5 pb-2">Our Mission</h2>
         <div class="card shadow border-0">
-          <div class="card-body">
-            <p class="card-text">
+          <div
+            class="card-body ps-5 pe-5 our-text-container d-flex flex-column justify-content-center"
+          >
+            <p class="card-text text-center">
               Disseminate, accommodate, initiate, and become solution in
-              Renewable Energy.
+              <b>Renewable Energy</b>.
             </p>
           </div>
         </div>
       </section>
     </section>
+    <!---->
     <section
       class="d-flex flex-column align-items-center flex-lg-row p-5"
       id="re-cast"
     >
       <section>
         <h2>Re-Cast</h2>
-        <p>
+        <p class="text-center text-md-start">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore veniam
           voluptatibus quasi consequatur doloremque nesciunt in, sequi facilis
           aliquam rerum nobis, corrupti et harum. Facilis enim deleniti
@@ -228,7 +214,7 @@
           delectus porro perferendis quam repudiandae?
         </p>
       </section>
-      <section class="d-flex flex-row" id="re-cast-articles">
+      <section class="" id="re-cast-articles">
         <!-- Embla carousel -->
         <div class="embla">
           <div class="embla__viewport">
@@ -242,7 +228,8 @@
                   />
                   <div class="card-body">
                     <p class="card-text">
-                      Re-Cast 1 : In this episode, we have deep convo with bla bla lorem ipsum dolor sit amet.
+                      Re-Cast 1 : In this episode, we have deep convo with bla
+                      bla lorem ipsum dolor sit amet.
                     </p>
                   </div>
                 </article>
@@ -256,7 +243,8 @@
                   />
                   <div class="card-body">
                     <p class="card-text">
-                      Re-Cast 2 : In this episode, we have deep convo with bla bla lorem ipsum dolor sit amet.
+                      Re-Cast 2 : In this episode, we have deep convo with bla
+                      bla lorem ipsum dolor sit amet.
                     </p>
                   </div>
                 </article>
@@ -270,7 +258,8 @@
                   />
                   <div class="card-body">
                     <p class="card-text">
-                      Re-Cast 3 : In this episode, we have deep convo with bla bla lorem ipsum dolor sit amet.
+                      Re-Cast 3 : In this episode, we have deep convo with bla
+                      bla lorem ipsum dolor sit amet.
                     </p>
                   </div>
                 </article>
@@ -281,46 +270,13 @@
           <button class="embla__next visually-hidden">></button>
         </div>
         <!-- End of Embla Carousel -->
-        <!-- Start of carousel -->
-        <div
-          id="re-cast-carousel"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-            </div>
-            <div class="carousel-item">
-            </div>
-            <div class="carousel-item">
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#re-cast-carousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#re-cast-carousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        <!-- End of carousel -->
       </section>
     </section>
+
     <!-- Sponsor Vision Mission section end -->
 
     <!-- Our YouTube-->
-    <section id="youtube" class="p-5">
+    <section id="youtube" class="p-5 d-flex flex-column align-items-center">
       <h2>Our YouTube</h2>
       <section
         class="d-flex flex-column align-items-center flex-md-row mt-5 justify-content-md-center mr"
@@ -351,87 +307,64 @@
           </div>
         </article>
       </section>
-      <a href="https://www.youtube.com/channel/UCLypr7EhlB4YlPg5xSZ92nA"
-        >See more</a
-      >
-      <button type="button" class="btn btn-outline-dark more-button p-1">
-        <img src="assets/home/img/arrow.svg" alt="" style="width: 100%;" />
-      </button>
+      <div>
+        See more
+        <a
+          target="_blank"
+          class="linkOut"
+          href="https://www.youtube.com/channel/UCLypr7EhlB4YlPg5xSZ92nA"
+        >
+          <button type="button" class="btn btn-outline-dark more-button p-1">
+            <img src="assets/home/img/arrow.svg" alt="" style="width: 100%;" />
+          </button>
+        </a>
+      </div>
     </section>
 
     <!-- SRE Insight section start -->
-    <section id="insight" class="p-5">
+    <section id="insight" class="p-5  d-flex flex-column align-items-center">
       <h2>SRE Insight</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-        commodi expedita laudantium vero hic iure exercitationem esse, nihil
-        voluptatibus fuga.
+      <p class="pt-3 pb-3 ps-md-5 pe-md-5 text-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur.
       </p>
 
-      <section class="d-flex flex-column align-items-center bg-transparent" id="re-cast-articles">
+      <section
+        class="d-flex flex-column align-items-center bg-transparent pt-3 pb-3"
+        id="sre-insight-articles"
+      >
         <!-- Start of carousel -->
         <div
           id="sre-insight-carousel"
-          class="carousel slide d-lg-flex"
+          class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner shadow" id="sre-insight-container">
-            <div class="carousel-item active d-lg-block">
-              <article class="card border-0" style="width: 24ch;">
-                <img
-                  class="card-img-top"
-                  src="assets/home/img/SRE-Insight/SRE-Insight_1.png"
-                  alt=""
-                />
-              </article>
-            </div>
-            <div class="carousel-item d-lg-block">
-              <article class="card border-0" style="width: 24ch;">
-                <img
-                  class="card-img-top"
-                  src="assets/home/img/SRE-Insight/SRE-Insight_2.png"
-                  alt=""
-                />
-              </article>
-            </div>
-            <div class="carousel-item d-lg-block">
-              <article class="card border-0" style="width: 24ch;">
-                <img
-                  class="card-img-top"
-                  src="assets/home/img/SRE-Insight/SRE-Insight_3.png"
-                  alt=""
-                />
-              </article>
-            </div>
-          </div>
+          <!-- carousel inner made with Sre-insight.js -->
           <button
-            class="carousel-control-prev d-lg-none"
+            class="carousel-control-prev"
             type="button"
             data-bs-target="#sre-insight-carousel"
             data-bs-slide="prev"
           >
-            <span
-              class="carousel-control-prev-icon d-lg-none"
-              aria-hidden="true"
-            ></span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next d-lg-none"
+            class="carousel-control-next"
             type="button"
             data-bs-target="#sre-insight-carousel"
             data-bs-slide="next"
           >
-            <span
-              class="carousel-control-next-icon d-lg-none"
-              aria-hidden="true"
-            ></span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
         <!-- End of carousel -->
       </section>
-      <div class="more">
+      <div class="more pt-3">
         <a href="#">See more</a>
         <button type="button" class="btn btn-outline-dark more-button p-1">
           <img src="assets/home/img/arrow.svg" alt="" style="width: 100%;" />
@@ -439,7 +372,23 @@
       </div>
     </section>
     <!-- SRE Insight section end -->
-
+    <!-- scroll top button -->
+    <a href="#" class="scrollTop d-flex justify-content-end me-4 mb-4">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="currentColor"
+        class="bi bi-arrow-up-circle text-decoration-none text-dark"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
+        />
+      </svg>
+    </a>
+    <!-- end scroll top button -->
     <!-- footer -->
     <footer
       class="footer d-flex flex-column justify-content-center align-items-center text-center"
@@ -555,9 +504,9 @@
     <script src="assets/home/script/embla-carousel.umd.js"></script>
     <script src="assets/home/script/embla-carousel-autoplay.umd.js"></script>
     <script src="assets/home/script/carousel.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
-      AOS.init();
-    </script>
-    <script src="assets/home/script/home.js"></script>
   </body>
+  <script id="urlRewriting">
+    var newUrl = "/";
+    window.history.pushState('data', 'Title', newUrl);
+    </script>
 </html>

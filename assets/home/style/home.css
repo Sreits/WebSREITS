@@ -30,6 +30,17 @@ a {
   background-color: #fff !important;
   transition: background-color 200ms linear;
 }
+#header-carousel-inner {
+  max-height: 80vh;
+}
+#header-carousel-item {
+  height: 80vh;
+}
+#header-carousel-inner > .carousel-item > img{
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+}
 .more-button {
   height: 2.2rem;
   width: 2.2rem;
@@ -50,9 +61,9 @@ a {
     'mission';
 }
 
-/*.blend-soft-light {
+.blend-soft-light {
   mix-blend-mode: soft-light;
-}*/
+}
 .sponsor {
   grid-area: sponsor;
 }
@@ -65,8 +76,11 @@ a {
   grid-area: mission;
 }
 section {
-
   border-bottom: 2px black;
+}
+
+.our-text-container {
+  height: 10.5rem;
 }
 /* Rectangle 1 */
 
@@ -90,7 +104,7 @@ section {
   display: none;
 }
 .bg-gradient-green-orange {
-  background-color: linear-gradient(-90deg, #ECCB75 3.21%, #BFCE79 47.11%, #92CD63 74.57%);
+  background: linear-gradient(-90deg, #ECCB75 3.21%, #BFCE79 47.11%, #92CD63 74.57%);
 }
 .youtube-article {
   width: 300px;
@@ -123,7 +137,7 @@ section {
 
 .embla {
   overflow: hidden;
-  max-width: 100%;
+  max-width: 90vw;
 }
 .embla__container {
   display: flex;
@@ -134,17 +148,52 @@ section {
   max-width: 100%;
   margin-right: 20px;
 }
+#sre-insight-carousel {
+  width: 24ch;
+}
+#sre-insight-container > div {
+  width: 24ch;
+}
+#sre-insight-container > div > img {
+  height:24ch;
+  width: 24ch;
+}
 
+.rounded-corners {
+  border-radius: 10px;
+}
 @media (min-width: 992px) {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 15px;
+    gap: 15px 35px;
     grid-auto-flow: row;
     grid-template-areas:
       'sponsor sponsor'
       'vision mission';
+  }
+
+  #header-img-carousel {
+    width: 50vw;
+    height: 100vh;
+  }
+
+  #header-carousel-inner {
+    width: 50vw;
+    height: 100vh;
+    max-height: 100vh;
+  }
+  #header-carousel-item {
+    height: 100vh;
+  }
+  #header-carousel-inner > .carousel-item {
+    max-height: 100%;
+  }
+  #header-carousel-img{
+    object-fit: none;
+    object-position: center;
+    vertical-align: bottom;
   }
 
   .sponsor {
