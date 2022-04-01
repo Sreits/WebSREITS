@@ -2,9 +2,6 @@ html {
   font-family: 'Open Sans', sans-serif;
   scroll-behavior: smooth;
 }
-button.navbar-toggler {
-  border: none;
-}
 .justify-items-center {
   justify-items: center;
 }
@@ -25,10 +22,6 @@ h2 {
 a {
   text-decoration: none;
   color: black;
-}
-.navbar.fixed-top.scrolled {
-  background-color: #fff !important;
-  transition: background-color 200ms linear;
 }
 #header-carousel-inner {
   max-height: 80vh;
