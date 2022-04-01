@@ -1,0 +1,16 @@
+#navbar {
+  transition: 0.3s;
+}
+.navbar-scrolled {
+  background-color: #bfce79;
+  opacity: 0.9;
+}
+@media only screen and (max-width: 576px) {
+  #navbar {
+    background-color: #bfce79;
+    opacity: 0.9;
+  }
+  button.navbar-toggler {
+    border: none;
+  }
+}
