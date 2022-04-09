@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SRE ITS | Home</title>
+    <title>Home | SRE ITS SC</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -26,19 +26,19 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="assets/home/style/home.css" />
     <link rel="stylesheet" href="kepaladankaki/navbar.css" />
-    <script>  
-      $(function(){ 
-        $("#header").load("kepaladankaki/header.html");  
-        $("#footer").load("kepaladankaki/footer.html");  
-      }); 
-      </script> 
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+    <script>
+      $(function () {
+        $('#header').load('kepaladankaki/header.html');
+        //$("#footer").load("kepaladankaki/footer.html");
+      })
+      $('#home-link').addClass("text-decoration-underline");
+    </script>
   </head>
   <body>
     <script src="assets/home/script/home.js" type="module"></script>
     <!-- navbar -->
-    <div id="header">
-
-    </div>
+    <div id="header"></div>
     <!-- navbar end -->
     <!-- Jumbotron start -->
     <section
@@ -479,5 +479,4 @@
     <script src="assets/home/script/embla-carousel-autoplay.umd.js"></script>
     <script src="assets/home/script/carousel.js"></script>
   </body>
-
 </html>
