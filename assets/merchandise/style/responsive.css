@@ -104,8 +104,8 @@
 
 	/*section 1 inside */
 	.section-1-right img{
-		max-width: 285px;
-		max-height: 385px;
+		max-width: 265px;
+		max-height: 365px;
 		height: auto;
 		width: auto;
 	}
@@ -234,7 +234,7 @@
 }
 
 
-@media only screen and (min-width: 400px and max-width: 576px) {
+@media only screen and (min-width: 400px) and (max-width: 576px) {
 .section-1{
 	min-height: 10px;
 	max-width: 576px;
@@ -340,8 +340,8 @@
 
 	/*section 1 inside */
 	.section-1-right img{
-		max-width: 385px;
-		max-height: 485px;
+		max-width: 450px;
+		max-height: 550px;
 		height: auto;
 		width: auto;
 	}
@@ -426,7 +426,7 @@
 
 .triple-carousel-container-header h1{
 	margin-top: 10px;
-	font-size: 65px;
+	font-size: 55px;
 	font-family: "Open Sans", sans-serif;
 	font-style: normal;
 	font-weight: bold;
@@ -469,7 +469,7 @@
 	/* cuma sementara */
  
 
-@media only screen and (min-width: 576px and max-width: 767.98px) {
+@media only screen and (min-width: 576px) and (max-width: 768px) {
 #navbar {
   	max-width: 767px;
   	width: 100vw;
@@ -500,7 +500,7 @@
 
 	.section-1{
 	min-height: 10px;
-	max-width: 767.98px;
+	max-width: 768px;
 	max-height: 200vw;
 	width: 100vw;
 	height: 150vh;
@@ -512,7 +512,7 @@
 
 .section-2{
 	min-height: 768px;
-	max-width: 767.98px;
+	max-width: 768px;
 	max-height: none;
 	width: 100vw;
 	height: 100vh;
@@ -526,7 +526,7 @@
 
 .section-3{
 	min-height: 768px;
-	max-width: 767.98px;
+	max-width: 768px;
 	max-height: none;
 	width: 100vw;
 	height: 100vh;
@@ -538,7 +538,7 @@
 
 .section-4{
 	min-height: 768px;
-	max-width: 767.98px;
+	max-width: 768px;
 	max-height: none;
 	width: 100vw;
 	height:auto;
@@ -548,7 +548,7 @@
 }
 
   #navbar {
-  	max-width: 767.98px;
+  	max-width: 768px;
   	width: 100vw;
     background-color: linear-gradient(121.79deg, #CEE75B 2.62%, #BFCE79 26.56%, #DDEC96 75.95%);
     opacity: 1;
@@ -580,7 +580,7 @@
 		min-height: 10px;
 		height: 75vh;
 		width: 100vw;
-  	max-width: 767.98px;
+  	max-width: 768px;
   	max-height: 75vh;
   	display: flex;
   	align-items: center;
@@ -592,7 +592,7 @@
 		min-height: 10px;
   	height: 75vh;
   	width: 100vw;
-  	max-width: 767.98px;
+  	max-width: 768px;
   	max-height: 75vh;
   	display: flex;
   	align-items: center;
@@ -614,14 +614,15 @@
 
 	.main-text	{
 	margin-top: 0px;
+	align-self: 	center	;
 }
 .main-text h1,.main-text h2,.main-text h3,.main-text h4{
 	text-align: 	center	;
-	font-size: 	30px;
+	font-size: 	75px;
 	font-family: "Open Sans", sans-serif;
 	margin-left: 20px;
 	margin-right: 20px;
-	line-height: 	40px;
+	line-height: 	100px;
 }
 
 .main-text	h2{
@@ -630,13 +631,14 @@
 
 .main-text h3{
 	margin-top: 10px;
-	font-size: 	30px;
+	font-size: 	45px;
 	font-weight: 	500;
+	line-height: 	80px;
 }
 
 .main-text	h4{
 	margin-top: 1px;
-	font-size: 	25px;
+	font-size: 	45px;
 }
 
 
@@ -672,7 +674,7 @@
 
 .triple-carousel-container-header{
 	width: 100vw;
-	height: 230px;
+	height: 350px;
 	background-color: #FFFFFF;
 	display: flex;
 	flex-direction: column;
@@ -683,20 +685,19 @@
 
 
 .triple-carousel-container-header h1{
-	margin-top: 10px;
-	font-size: 65px;
+	font-size: 85px;
 	font-family: "Open Sans", sans-serif;
 	font-style: normal;
 	font-weight: bold;
 }
 
 .triple-carousel-container-header h2{
-	font-size: 23px;
+	font-size: 30px;
 	font-family: "Open Sans", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	text-align: center;
-	margin-top: 5%;
+	margin-top: 	10%;
 	margin-left: 15%;
 	margin-right: 15%;
 	margin-bottom: 10%;
@@ -724,7 +725,46 @@
 }
 
 
-@media only screen and (min-width: 767.98px and max-width: 991.98px) { 
+@media only screen and (min-width: 768px) and (max-width: 991.98px) { 
+.main-text {
+	max-width: 	100%;
+}
+
+.main-text h1,.main-text h2,.main-text h3,.main-text h4{
+	text-align: 	left		;
+	font-size: 	50px;
+	font-family: "Open Sans", sans-serif;
+	margin-left: 20px;
+	margin-right: 20px;
+	line-height: 	80px;
+}
+
+.main-text	h2{
+	font-weight: 	700;
+}
+
+.main-text h3{
+	margin-top: 10px;
+	font-size: 	22px;
+	font-weight: 	500;
+}
+
+.main-text	h4{
+	margin-top: 1px;
+	font-size: 	20px;
+}
+.section-1{
+	max-height: 25vw;
+	height: 	50%;
+}
+
+.section-1-left{
+	max-height: 25vw;
+}
+
+.section-1-right{
+	max-height: 25vw;
+}
 .section-1-left-bottom-button{
 	margin-top: 30px;
 	height: 20%;
@@ -733,7 +773,7 @@
 	flex-direction: row;
 	justify-content: center;
 	gap: 10px;
-	align-self: center;
+	align-self: flex-start			;
 }
 
 
@@ -778,7 +818,7 @@
  }
 
 
-@media only screen and (min-width: 991.98px and max-width: 1199.98px) { 
+@media only screen and (min-width: 991.98px) and (max-width: 1199.98px) { 
 .owl-nav{
 	position: absolute;
 	top: 220px;
