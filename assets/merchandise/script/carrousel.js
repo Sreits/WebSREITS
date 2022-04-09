@@ -22,7 +22,7 @@ $('.owl-carousel').owlCarousel({
         600:{
             items:1
         },
-        1400:{
+        1300:{
             items:3
         }
     }
