@@ -1,7 +1,7 @@
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
 .section-1{
 	min-height: 10px;
-	max-width: 400px;
+	max-width: 450px;
 	max-height: 200vw;
 	width: 100vw;
 	height: 150vh;
@@ -13,7 +13,7 @@
 
 .section-2{
 	min-height: 768px;
-	max-width: 400px;
+	max-width: 450px;
 	max-height: none;
 	width: 100vw;
 	height: 100vh;
@@ -27,7 +27,7 @@
 
 .section-3{
 	min-height: 768px;
-	max-width: 400px;
+	max-width: 450px;
 	max-height: none;
 	width: 100vw;
 	height: 100vh;
@@ -39,7 +39,7 @@
 
 .section-4{
 	min-height: 768px;
-	max-width: 400px;
+	max-width: 450px;
 	max-height: none;
 	width: 100vw;
 	height:auto;
@@ -49,7 +49,7 @@
 }
 
   #navbar {
-  	max-width: 400px;
+  	max-width: 450px;
   	width: 100vw;
     background-color: linear-gradient(121.79deg, #CEE75B 2.62%, #BFCE79 26.56%, #DDEC96 75.95%);
     opacity: 1;
@@ -93,7 +93,7 @@
 		min-height: 10px;
   	height: 75vh;
   	width: 100vw;
-  	max-width:400px;
+  	max-width:450px;
   	max-height: 75vh;
   	display: flex;
   	align-items: center;
@@ -104,8 +104,8 @@
 
 	/*section 1 inside */
 	.section-1-right img{
-		max-width: 265px;
-		max-height: 365px;
+		max-width: 315px;
+		max-height: 415px;
 		height: auto;
 		width: auto;
 	}
@@ -209,8 +209,21 @@
 }
 
 
-.owl-item{
-	width: 300px;
+.item{
+	width: 90%;
+	max-width: 330px;
+}
+
+.item-box-text li{
+	font-size: 27px;
+}
+
+.item-box-button p{
+	font-size: 40px;
+}
+
+.item-box-button a{
+	font-size: 35px;
 }
 .owl-nav{
 	position: absolute;
@@ -231,10 +244,13 @@
 	width: 60px;
 }
 
+.instagram-box{
+	width: 85%;
+}
 }
 
 
-@media only screen and (min-width: 400px) and (max-width: 576px) {
+@media only screen and (min-width: 450px) and (max-width: 576px) {
 .section-1{
 	min-height: 10px;
 	max-width: 576px;

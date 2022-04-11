@@ -63,7 +63,27 @@ body{
 	align-items: center;
 }
 
+/* trackbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(231, 216, 216);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #97a35f;
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e2eeab;
+}
 
 .carousel-inner, .carouselExampleControls,.carouselExampleSlidesOnly,.carousel.slide{
 	min-height: 768px;
@@ -420,8 +440,9 @@ body{
 }
 
 .item-box-button a:hover{
-	color: black;
+	color: darkblue;
 	opacity: 0.6;
+	margin-left: 10px;
 }
 
 
@@ -448,6 +469,7 @@ body{
 	background: none !important;
 	outline: none !important;
 	opacity: 0.5;
+	
 }
 
 .owl-nav .owl-prev, .owl-nav .owl-next{
