@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/* trackbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(231, 216, 216);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #97a35f;
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e2eeab;
+}
+/* end trackbar */
+
+#navbar {
+  transition: 0.3s;
+}
+.navbar-scrolled {
+  background-color: #bfce79;
+  opacity: 0.9;
+}
+@media only screen and (max-width: 576px) {
+  #navbar {
+    background-color: #bfce79;
+    opacity: 0.9;
+  }
+  .carousel-item.testimonial {
+    font-size: 12px;
+  }
+  .carousel-item.member {
+    font-size: 12px;
+  }
+}
+body {
+  background-color: white;
+}
+.jumbotron {
+  min-height: 100vh;
+  background-image: url("/assets/home (1).png");
+  background-color: #bfce79;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.content {
+  min-height: 90vh;
+}
+.footer {
+  height: 280px;
+  background-image: url("/assets/about/img/footer-background.png");
+  background-color: #bfce79;
+  color: #656e3d;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.scrollTop {
+  transition: 0.3s;
+}
+.linkOut {
+  color: inherit;
+}
+.linkOut:hover {
+  cursor: nesw-resize;
+  color: #acb48b;
+}
+.carousel-item.member {
+  height: 100%;
+  width: 100%;
+  background-image: url("/assets/about/img/Group-170.png");
+  background-color: #bfce79;
+  color: #656e3d;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.carousel-inner.member {
+  height: 534px;
+}
+
+.carousel-item.testimonial {
+  height: 255px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 16px; /* change width */
+  height: 16px; /* change height */
+  border-radius: 100%; /* add border-radius */
+  background-color: #97a35f;
+}
+.card.testimonial {
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff8be;
+}
+#testimonial {
+  color: #656e3d;
+}
