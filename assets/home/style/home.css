@@ -29,7 +29,7 @@ a {
 #header-carousel-item {
   height: 80vh;
 }
-#header-carousel-inner > .carousel-item > img{
+#header-carousel-inner > .carousel-item > img {
   max-width: 100%;
   object-fit: cover;
   object-position: center bottom;
@@ -50,7 +50,7 @@ a {
   grid-auto-flow: row;
   grid-template-areas:
     'sponsor'
-    'vision' 
+    'vision'
     'mission';
 }
 
@@ -71,39 +71,28 @@ a {
 section {
   border-bottom: 2px black;
 }
-
 .our-text-container {
-  height: 10.5rem;
-}
-/* Rectangle 1 */
-
-#rectangle1 {
-  position: absolute;
-  width: 743px;
-  height: 930px;
-  left: 1527px;
-  top: 0px;
-
-  background: linear-gradient(
-    89.96deg,
-    #eccb75 3.21%,
-    #bfce79 47.11%,
-    #92cd63 74.57%
-  );
-  transform: matrix(-1, 0, 0, 1, 0, 0);
+    padding: 3rem 0;
+  max-width: 312px;
 }
 
 #insight .more {
   display: none;
 }
 .bg-gradient-green-orange {
-  background: linear-gradient(-90deg, #ECCB75 3.21%, #BFCE79 47.11%, #92CD63 74.57%);
+  background: linear-gradient(
+    -90deg,
+    #eccb75 3.21%,
+    #bfce79 47.11%,
+    #92cd63 74.57%
+  );
 }
 .youtube-article {
   width: 300px;
 }
 #re-cast {
-  background: url("/assets/home/img/re-cast-bg.png"), linear-gradient(-90deg, #ECCB75 3.21%, #BFCE79 47.11%, #92CD63 74.57%);
+  background: url('/assets/home/img/re-cast-bg.png'),
+    linear-gradient(-90deg, #eccb75 3.21%, #bfce79 47.11%, #92cd63 74.57%);
   background-blend-mode: soft-light;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -112,7 +101,7 @@ section {
 
 .footer {
   height: 280px;
-  background-image: url("/assets/about/img/footer-background.png");
+  background-image: url('/assets/about/img/footer-background.png');
   background-color: #bfce79;
   color: #656e3d;
   background-position: center; /* Center the image */
@@ -148,7 +137,7 @@ section {
   width: 24ch;
 }
 #sre-insight-container > div > img {
-  height:24ch;
+  height: 24ch;
   width: 24ch;
 }
 
@@ -183,7 +172,7 @@ section {
   #header-carousel-inner > .carousel-item {
     max-height: 100%;
   }
-  #header-carousel-img{
+  #header-carousel-img {
     object-fit: none;
     object-position: center;
     vertical-align: bottom;
@@ -199,6 +188,11 @@ section {
 
   .mission {
     grid-area: mission;
+  }
+
+  .our-text-container {
+    max-width: 312px;
+    height: 10.5rem;
   }
 
   .h-lg-100 {
