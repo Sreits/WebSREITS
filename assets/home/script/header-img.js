@@ -18,10 +18,10 @@ const header_carousel_inner = () => {
     carousel_inner.className = "carousel-inner";
     carousel_inner.setAttribute("id", "header-carousel-inner");
     let first = true;
+    let i = 1;
     for (const imgItem of imgList) {
         const img_container = document.createElement("div");
-        img_container.className = "carousel-item bg-gradient-green-orange";
-        img_container.setAttribute("id", "header-carousel-item");
+        img_container.className = "carousel-item bg-gradient-green-orange header-carousel-item";
         if(first){
             img_container.classList.add("active");
             first = false;

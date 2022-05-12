@@ -8,6 +8,9 @@ html {
 h1 {
   font-size: 26pt;
 }
+#home-link {
+    text-decoration: underline;
+}
 .vh-60 {
   height: 60vh;
 }
@@ -26,7 +29,7 @@ a {
 #header-carousel-inner {
   max-height: 80vh;
 }
-#header-carousel-item {
+.header-carousel-item {
   height: 80vh;
 }
 #header-carousel-inner > .carousel-item > img {
@@ -166,7 +169,7 @@ section {
     height: 100vh;
     max-height: 100vh;
   }
-  #header-carousel-item {
+  .header-carousel-item {
     height: 100vh;
   }
   #header-carousel-inner > .carousel-item {
