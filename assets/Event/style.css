@@ -54,6 +54,10 @@
 body {
   background-color: white;
 }
+.someHeader{
+  height: 50px;
+
+}
 .jumbotron {
   min-height: 100vh;
   background-image: url("home-_1_.jpeg");
